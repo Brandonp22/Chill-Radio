@@ -9,7 +9,7 @@ html{
 }
 
 body{
-    background: #1F1F1F;
+    background: #2C2F33;
 }
 
 header{
@@ -21,6 +21,7 @@ header{
 
 header h2{
     position: absolute;
+    padding: 1rem 0 0 2rem;
     font-size: 4rem;
     color: #CBCBCB;
 }
@@ -40,11 +41,19 @@ header h2{
     padding: 0 2rem;
 }
 
+.top-nav li a{
+    text-decoration: none;
+    color: #CBCBCB;
+}
+
+.top-nav li a:hover{
+    color: #7CFDFC;
+}
+
 aside{
     position: absolute;
     width: 20%;
     min-width: 10rem;
-    max-width: 40rem;
     height: 100vh;
     background: #000000;
 }
@@ -54,8 +63,11 @@ aside{
     width: 80%;
     height: 100px;
     margin: 1rem 10% 0 10% ;
-    border-radius: 1rem;
-    background-color: purple;
+}
+
+.container iframe{
+    width: 100%;
+    height: 100%;
 }
 
 main{
@@ -64,12 +76,12 @@ main{
     width: 80%;
     height: 100vh;
     background: url(https://images.pexels.com/photos/1376766/nature-milky-way-galaxy-space-1376766.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
-    overflow: hidden;
+    object-fit: cover;
 }
 
 main iframe{
     margin: 5% 10%;
-    border: 2px solid blue;
+    border: 2px solid #7CFDFC;
     width: 80%;
     height: 60%;
 }
@@ -78,7 +90,51 @@ footer{
     position: static;
     width: 100%;
     height: 10rem;
-    background: 272727;
+    background: #2C2F33;
+}
+
+footer p{
+    padding-top: 2rem;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #CBCBCB;
+}
+
+.contact{
+    text-align: right;
+    padding: 0 2rem 2rem 0;
+}
+
+.contact a{
+    align-items: center;
+    display: inline-block;
+    padding-left: 1rem;
+}
+
+.contact .git{
+    width: 5rem;
+    height: 5rem;
+    content: url(https://cdn-icons-png.flaticon.com/512/25/25231.png);
+    background-color: transparent;
+    position: absolute;
+}
+
+.contact .gitFondo{
+
+    width: 4.6rem;
+    height: 4.6rem;
+    margin-top: 0.4rem ;
+    margin-left: 0.2rem;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.contact .platzi{
+    width: 5rem;
+    height: 5rem;
+    content: url(https://static.platzi.com/media/avatars/platziteam_8cfe6fc7-1246-4c9a-9f5d-d10d467443ee.png);
+    background-color: transparent;
 }
 
 @media (max-width: 640px){
