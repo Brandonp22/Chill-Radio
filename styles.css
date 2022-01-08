@@ -58,6 +58,11 @@ aside{
     background: #000000;
 }
 
+aside ul{
+    width: 100%;
+    min-width: 10rem;
+    height: 100vh;
+}
 .container{
     display: inline-block;
     width: 80%;
@@ -75,8 +80,10 @@ main{
     margin-left: 20%;
     width: 80%;
     height: 100vh;
-    background: url(https://images.pexels.com/photos/1376766/nature-milky-way-galaxy-space-1376766.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
-    object-fit: cover;
+    background-image: url(https://images.pexels.com/photos/1376766/nature-milky-way-galaxy-space-1376766.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
 }
 
 main iframe{
@@ -158,3 +165,20 @@ footer p{
         height: 60%;
     }
 }
+
+@media (min-width: 1000px){
+    .container iframe{
+        width: 100%;
+        height: 20vh;
+        max-height: 105px;
+    }
+}
+
+@media (min-width: 1700px){
+    .container iframe{
+        width: 100%;
+        height: 20vh;
+        max-height: 155px;
+    }
+}
+
