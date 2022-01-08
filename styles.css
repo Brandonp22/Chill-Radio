@@ -62,6 +62,7 @@ aside ul{
     width: 100%;
     min-width: 10rem;
     height: 100vh;
+    overflow: scroll;
 }
 .container{
     display: inline-block;
